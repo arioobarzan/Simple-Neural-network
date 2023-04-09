@@ -25,7 +25,6 @@ for i=0:iteration
     mean(error);
     disp(['iteration: ',num2str(i),' - ','mean(error):',num2str(mean(error))])
 end
-label = [1801:1812 1901:1905];
 h = plot(1:57,real(1,:),'blue',1:57,predict(1,:),'red');
 xlim([1 57])
 ylim([0 100])
